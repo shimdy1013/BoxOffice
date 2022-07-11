@@ -47,8 +47,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func getData() {
+        
+        // 1. URL 만들기
         guard let url = URL(string: movieURL) else { return }
+        
+        // 2. URLSession 만들기
         let session = URLSession(configuration: .default)
+        
+        // 3. URLSession 인스턴스에게 task 주기
         let task = session.dataTask(with: url) { (data, response, error) in
             if error != nil {
                 print(error!)
@@ -66,6 +72,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 print(error)
             }
         }
+        
+        // 4. task 시작
         task.resume()
     }
     
