@@ -1,4 +1,4 @@
-## 박스오피스 Open API를 활용한 영화순위 앱
+   ## 박스오피스 Open API를 활용한 영화순위 앱
 작업 툴 : Swift, Xcode, AutoLayout, OpenAPI
 #### 기능
 * 실시간 영화순위 제공
